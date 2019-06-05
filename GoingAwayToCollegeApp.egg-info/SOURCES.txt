@@ -1,0 +1,9 @@
+GoingAwayToCollegeApp/__init__.py
+GoingAwayToCollegeApp/controller.py
+GoingAwayToCollegeApp/model.py
+GoingAwayToCollegeApp/view.py
+GoingAwayToCollegeApp.egg-info/PKG-INFO
+GoingAwayToCollegeApp.egg-info/SOURCES.txt
+GoingAwayToCollegeApp.egg-info/dependency_links.txt
+GoingAwayToCollegeApp.egg-info/requires.txt
+GoingAwayToCollegeApp.egg-info/top_level.txt
