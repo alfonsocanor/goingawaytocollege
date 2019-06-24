@@ -9,8 +9,10 @@ from sqlalchemy.orm import sessionmaker
 #SQLAlchemy DML dependencies
 from sqlalchemy import Column, String, Integer, Boolean, ForeignKey
 from sqlalchemy.orm import relationship, backref
+#Marshmallow dependencies
+from flask_marshmallow import Marshmallow
 
-#Configuring/Connecting SQLAlchemy
+#Setting/Connecting SQLAlchemy
 config = sqlalchemyConfig.SqlAlchemyConfig()
 engine = create_engine(config.config())
 Base = declarative_base()
@@ -33,9 +35,5 @@ class Usuario(Base):
     dni = (String)
 
 Session = sessionmaker(bind=engine)
-#session = Session()
 
-#con = engine.connect()
-#result = con.execute("SELECT * FROM `USUARIO`")
-#print('Resultado' + str(result))
 
