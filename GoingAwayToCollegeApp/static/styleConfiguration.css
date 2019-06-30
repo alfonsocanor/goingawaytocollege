@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#general{
+    background-color:#DEF2F1;
+}
+
+#configMenu {
+    width: 100%;
+}
+
+#configMenu li {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    margin-left: 1px;
+}
+
+#configMenu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 2px;
+    margin: 1px;
+    width: 30%;
+    height: auto;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 12px;
+    background-color: #000;
+    
+}
+
+#configMenu li a:hover {
+    color: #000;
+    background-color: #fff;
+    
+}
+
+#configMenu li ul {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    
+}
+
+#configMenu li:hover ul {
+    display: block;
+    width: 150%;
+}

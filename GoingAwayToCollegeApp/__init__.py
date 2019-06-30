@@ -2,6 +2,7 @@
 from flask import Flask
 
 app = Flask(__name__)
+            #,static_folder='GoingAwayToCollegeApp/static')
 app.config['SECRET_KEY'] = 'ThisIsAnOpenSource'
 
 import GoingAwayToCollegeApp.model

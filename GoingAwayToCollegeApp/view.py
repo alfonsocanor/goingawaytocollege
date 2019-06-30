@@ -10,18 +10,18 @@ def index():
 
 @app.route('/createProfile', methods=['GET', 'POST'])
 def createProfile():
+    error = None
     form = forms.CreateProfile(request.form)
     if(request.method == 'POST'):
         try:
             print('try?')
             profileDML.create(form.name.data)
-            flash('The profile ' + str(form.name.data) + 'has been Successfuly created')
+            flash('The profile name' + str(form.name.data).upper() + ' has been Successfuly created')
         except IntegrityError:
-            print('except?')
+
             session.rollback()
-            print(session)
-            flash('The profile ' + str(form.name.data) + 'already exist. ')
-    return render_template('createprofile.html', form=form)
+            flash('The profile name ' + str(form.name.data).upper() + ' already exist. ')
+    return render_template('createprofile.html', form=form, error=error)
 
 @app.route('/login_alumni')
 def login_alumni():
